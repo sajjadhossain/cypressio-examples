@@ -6,10 +6,10 @@ This repository is a collection of CypressIO examples. It will provide copy-and-
 
 ### MVP v0.0.1
 
-- [] Reusable commands
-- [] Parameterized functions
-- [] Dynamic form filling and submission
-- [] API examples
+- [ ] Reusable commands
+- [ ] Parameterized functions
+- [ ] Dynamic form filling and submission
+- [ ] API examples
 
 <!--
 # Run the tests

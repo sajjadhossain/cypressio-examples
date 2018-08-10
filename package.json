@@ -1,7 +1,7 @@
 {
   "name": "cypressio-examples",
   "version": "1.0.0",
-  "description": "peleton coding exercise",
+  "description": "A collection of CypressIO examples",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/cypress run --headed",
