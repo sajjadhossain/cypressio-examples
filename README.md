@@ -1,3 +1,8 @@
+# cypress.io examples
+
+This repository will be an installation and collection of cypress functionality. It's something I plan on contributing to to have copy-and-paste functionality to use. I will start with Mocha, but I plan to include Cucumber and as many plugins that I can.
+
+<!--
 # peloton exercise
 
 ## Task 1
@@ -69,7 +74,7 @@ The objective was to use cypress and page object patterns to script the followin
   So that I can print it to the Console
   ```
 
-As per the task, I was asked to create multiple scripts to test multiple scenarios, of both valid and invalid states. As you can see, I've only covered the basics, valid path scenarios, however because I am using commands and page fixtures, I will be able to reuse my functions and data as needed. 
+As per the task, I was asked to create multiple scripts to test multiple scenarios, of both valid and invalid states. As you can see, I've only covered the basics, valid path scenarios, however because I am using commands and page fixtures, I will be able to reuse my functions and data as needed.
 
 # Run the tests
 
@@ -88,3 +93,4 @@ npm run test
 ```
 
 **Note:** *To view the console.output, open up the Chrome debugging window, by right-clicking > Inspect > Console.*
+-->
