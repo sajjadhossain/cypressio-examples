@@ -11,6 +11,12 @@ This repository is a collection of CypressIO examples. It will provide copy-and-
 - [ ] Dynamic form filling and submission
 - [ ] API examples
 
+### features
+
+- [ ] `visitPage`: A command that uses the configuration JSON
+- [ ] `visitPage`: A command that uses dynamic inputs
+
+
 <!--
 # Run the tests
 
