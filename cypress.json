@@ -1,1 +1,11 @@
-{}
+{
+  "baseUrl": "http://localhost:9999/index.html",
+  "pageLoadTimeout": 30000,
+  "requestTimeout": 5000,
+  "responseTimeout": 30000,
+  "defaultCommandTimeout": 4000,
+  "execTimeout": 60000,
+  "taskTimeout": 60000,
+  "trashAssetsBeforeRuns": true,
+  "watchForFileChanges": true
+}
