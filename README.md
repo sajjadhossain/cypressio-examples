@@ -15,7 +15,7 @@ This repository is a collection of CypressIO examples. It will provide copy-and-
 
 - [x] `visitBaseUrl`: Visits using the configuration JSON in project root.
 - [ ] `visitPage`: Visits using passed parameters.
-- [x] `assertBaseUrl`: Asserts a traversed element module that represents the base URL. See [baseUrl.js]('./cypress/fixtures/test-application/elements/baseUrl.js').
+- [x] `assertBaseUrl`: Asserts a traversed element module that represents the base URL. See [baseUrl.js](./cypress/fixtures/test-application/elements/baseUrl.js).
 
 
 <!--
