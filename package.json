@@ -8,9 +8,14 @@
     "test": "./node_modules/.bin/cypress run --headed",
     "cy:open": "./node_modules/.bin/cypress open"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sajjadhossain/cypressio-examples"
+  },
   "author": "sajjad hossain",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^3.0.2"
+    "cypress": "^3.0.2",
+    "himalaya": "^1.1.0"
   }
 }
