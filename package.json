@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "cd ./test-application && php -S localhost:9999",
-    "test": "./node_modules/.bin/cypress run --headed",
+    "test": "./node_modules/.bin/cypress run",
     "cy:open": "./node_modules/.bin/cypress open"
   },
   "repository": {

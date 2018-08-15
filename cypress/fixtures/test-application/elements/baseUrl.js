@@ -11,18 +11,71 @@ module.exports = {
     identifier: '#top > nav',
     contents: {
       ul: {
-        identifier: 'ul',
+        identifier: '#top > nav > ul',
         length: 3,
-        1: {
-          identifier: 'nav > ul[0]'
-        },
-        2: {
-          identifier: 'nav > ul[1]'
-        },
-        3: {
-          identifier: 'nav > ul[2]'
+        links: [
+          'Text',
+          'Embedded content',
+          'Form elements'
+        ],
+        contents: {
+          identifier: '#top > nav > ul > li',
+          length: 24,
+          links: [
+            'Headings',
+            'Paragraphs',
+            'Blockquotes',
+            'Lists',
+            'Horizontal rules',
+            'Tabular data',
+            'Code',
+            'Inline elements',
+            'HTML Comments',
+            'Images',
+            'Audio',
+            'Video',
+            'Canvas',
+            'Meter',
+            'Progress',
+            'Inline SVG',
+            'IFrames',
+            'Input fields',
+            'Select menus',
+            'Checkboxes',
+            'Radio buttons',
+            'Textareas',
+            'HTML5 inputs',
+            'Action buttons'
+          ]
         }
       }
     }
+  },
+  sections: {
+    identifiers: [
+      '#text',
+      '#embedded',
+      '#forms'
+    ],
+    length: 3,
+    contents: {
+      length: 9,
+      articles: [
+        'Headings',
+        'Paragraphs',
+        'Blockquotes',
+        'Lists',
+        'Horizontal rules',
+        'Tabular data',
+        'Code',
+        'Inline elements',
+        'HTML Comments'
+      ]
+    }
+  },
+  articles: {
+    identifiers: [
+
+    ]
   }
 }
