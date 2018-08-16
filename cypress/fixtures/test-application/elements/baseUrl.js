@@ -1,27 +1,26 @@
 // This is our element module for the test application's base URL
 module.exports = {
   header: {
-    identifier: '#top > header',
+    identifier: 'header[role="banner"]',
     contents: {
       h1: 'HTML5 Test Page',
       p: 'This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.'
     }
   },
   navigation: {
-    identifier: '#top > nav',
+    identifier: 'nav[role="navigation"]',
     contents: {
       ul: {
         identifier: '#top > nav > ul',
-        length: 3,
+        total: 3,
         links: [
           'Text',
           'Embedded content',
           'Form elements'
         ],
-        contents: {
+        li: {
           identifier: '#top > nav > ul > li',
-          length: 24,
-          links: [
+          0: [
             'Headings',
             'Paragraphs',
             'Blockquotes',
@@ -30,7 +29,9 @@ module.exports = {
             'Tabular data',
             'Code',
             'Inline elements',
-            'HTML Comments',
+            'HTML Comments'
+          ],
+          1: [
             'Images',
             'Audio',
             'Video',
@@ -38,7 +39,9 @@ module.exports = {
             'Meter',
             'Progress',
             'Inline SVG',
-            'IFrames',
+            'IFrames'
+          ],
+          2: [
             'Input fields',
             'Select menus',
             'Checkboxes',
@@ -51,31 +54,32 @@ module.exports = {
       }
     }
   },
+  main: {
+    identifier: 'main[role="main"]'
+  },
   sections: {
     identifiers: [
       '#text',
       '#embedded',
       '#forms'
     ],
-    length: 3,
-    contents: {
-      length: 9,
-      articles: [
-        'Headings',
-        'Paragraphs',
-        'Blockquotes',
-        'Lists',
-        'Horizontal rules',
-        'Tabular data',
-        'Code',
-        'Inline elements',
-        'HTML Comments'
-      ]
+    total: 3,
+    articles: {
+      identifier: 'article',
+      0: {
+        length: 9
+      },
+      1: {
+        length: 8
+      },
+      2: {
+        length: 7
+      }
     }
-  },
-  articles: {
-    identifiers: [
-
-    ]
   }
+  // articles: {
+  //   identifiers: [
+  //
+  //   ]
+  // }
 }
