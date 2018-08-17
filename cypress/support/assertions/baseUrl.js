@@ -1,4 +1,6 @@
-// This command makes assertions against the baseUrl
+// Called after cy.visitBaseUrl()
+// These commands make assertions against the baseUrl
+
 Cypress.Commands.add('assertHeader', (base) => {
   // assert header
   cy.contains(base.header.identifier, base.header.contents.h1).should('be.visible')
@@ -25,7 +27,7 @@ Cypress.Commands.add('assertNavigation', (base) => {
   })
 })
 
-// Needs to be used after visiting base URL via cy.visitBaseUrl()
+// assert top, main, sections, articles, footer
 Cypress.Commands.add('assertBaseUrl', (base) => {
   cy.assertHeader(base)
   cy.assertNavigation(base)
@@ -34,13 +36,14 @@ Cypress.Commands.add('assertBaseUrl', (base) => {
   cy.contains(base.main.identifier, base.navigation.contents.ul.links[0]).should('be.visible')
 
   // assert sections and articles within
-  for(let i = 0; i < base.sections.length; i += 1) {
-    cy.get(base.sections.identifiers[i]).should((section) => {
-      expect(section).to.contain(base.sections.articles.identifier)
-    }).each(() => {
-      cy.get(base.sections.articles.identifier).should((article) => {
-        expect(article).to.have.length(base.sections.articles[i].total)
-      })
+  for(let i = 0; i < base.sections.identifiers.length; i += 1) {
+    cy.get(base.sections.identifiers[i]).each(() => {
+      for(let j = 0; j < base.sections.articles[i].identifiers.length; j += 1) {
+        console.log(base.sections.articles[i].identifiers[j])
+        cy.get(base.sections.articles[i].identifiers[j]).should((article) => {
+          expect(article).to.contain(base.navigation.contents.ul.li[i][j])
+        })
+      }
     })
   }
 })

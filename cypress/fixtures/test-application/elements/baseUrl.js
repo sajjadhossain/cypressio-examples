@@ -63,23 +63,37 @@ module.exports = {
       '#embedded',
       '#forms'
     ],
-    total: 3,
     articles: {
-      identifier: 'article',
       0: {
-        length: 9
+        identifiers: [
+          '#text__headings',
+          '#text__paragraphs',
+          '#text__blockquotes',
+          '#text__lists',
+          '#text__hr',
+          '#text__tables',
+          '#text__code',
+          '#text__inline',
+          '#text__comments'
+        ]
       },
       1: {
-        length: 8
+        identifiers: [
+          '#embedded__images',
+          '#embedded__audio',
+          '#embedded__video',
+          '#embedded__canvas',
+          '#embedded__meter',
+          '#embedded__progress',
+          '#embedded__svg',
+          '#embedded__iframe'
+        ]
       },
       2: {
-        length: 7
+        identifiers: [
+          '#forms'
+        ]
       }
     }
   }
-  // articles: {
-  //   identifiers: [
-  //
-  //   ]
-  // }
 }
