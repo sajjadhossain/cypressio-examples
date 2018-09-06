@@ -43,6 +43,12 @@ The benefits of choosing this framework are also available on their site, just i
 ## Get started
 The tests are executed from the command line. Fire up terminal, and navigate to the project root.
 
+### 0. Clone and install submodules
+
+```sh
+git clone --recurse-submodules https://github.com/sajjadhossain/cypressio-examples.git
+```
+
 ### 1. Install
 
 ```sh

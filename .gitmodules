@@ -1,6 +1,6 @@
-[submodule "wiki-2"]
-	path = wiki-2
-	url = https://github.com/sajjadhossain/cypressio-examples.wiki.git
 [submodule "test_application"]
 	path = test_application
 	url = https://github.com/cbracco/html5-test-page.git
+[submodule "wiki"]
+	path = wiki
+	url = https://github.com/sajjadhossain/cypressio-examples.wiki.git
