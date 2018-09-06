@@ -36,7 +36,7 @@ The benefits of choosing this framework are also available on their site, just i
 - [x] `visitBaseUrl`: Visits using the configuration JSON in project root. Uses `assertBaseUrl` to assert page is visited.
     - [x] `hardReset`: Resets the entire browser and its cache.
     - [x] `assertBaseUrl`: Asserts a traversed element module that represents the base URL. See [baseUrl.js](./cypress/fixtures/test-application/elements/baseUrl.js).
-    - [ ] Wiki documentation for `visitBaseUrl` and `assertBaseUrl`
+    - [x] Wiki documentation for `visitBaseUrl`, `assertBaseUrl` and `hardReset`
 - [ ] `pageShouldContain`: Parameterized command that takes `string`, `tag`, `attributes` when making an assertion against an element on the page.
 - [ ] `fillInForm`: Parameterized command that fills in form with `id`, `values`, `submit`. `submit` is a boolean that submits the form upon filling.
 
