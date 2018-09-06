@@ -3,7 +3,7 @@
 This repository is a collection of CypressIO examples. It will provide copy-and-paste commands and snippets to use agnostically with any installation of CypressIO.
 
 ## Abstract
-What is [CypressIO](https://www.cypress.io)? Take a gander through their site, specifically their [how it works](https://www.cypress.io/how-it-works/) section. CypressIO is an integration test framework. It is different from other frameworks in that it gives developers and quality engineers tools needed to debug and create BDD-style tests seamlessly. 
+What is [CypressIO](https://www.cypress.io)? Take a gander through their site, specifically their [how it works](https://www.cypress.io/how-it-works/) section. CypressIO is an integration test framework. It is different from other frameworks in that it gives developers and quality engineers tools needed to debug and create BDD-style tests seamlessly.
 
 ### How it works
 It uses an Electron (Chrome) browser, either headless or headed. Using Mocha-style code, you `describe` your feature in a number of `it` clauses. After adding a spec that uses their API, some of which is unique and highly programmable, like `get()` and `should()`, use either the CLI or GUI to run your tests.
@@ -55,7 +55,13 @@ npm install
 ./node_modules/.bin/cypress install
 ```
 
-### 2. Execute npm script
+### 3. Start the application server
+
+```sh
+npm run serve
+```
+
+### 4. Execute npm script
 
 ```sh
 npm run test

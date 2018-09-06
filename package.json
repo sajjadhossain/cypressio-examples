@@ -4,7 +4,7 @@
   "description": "A collection of CypressIO examples",
   "main": "index.js",
   "scripts": {
-    "serve": "cd ./test-application && php -S localhost:9999",
+    "serve": "cd ./test_application && php -S localhost:9999",
     "test": "./node_modules/.bin/cypress run --headed",
     "cy:open": "./node_modules/.bin/cypress open"
   },
