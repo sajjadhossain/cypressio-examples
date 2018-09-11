@@ -2,8 +2,8 @@ before(() => {
   cy.hardReset()
 })
 
-describe('Commands', () => {
-  it('uses the base URL in configuration', () => {
+describe('visitBaseUrl()', () => {
+  it('visits the URL in cypress.json, invokes assertBaseUrl()', () => {
     cy.visitBaseUrl('')
   })
 })
