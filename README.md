@@ -25,11 +25,7 @@ The benefits of choosing this framework are also available on their site, just i
 
 - Reusable commands
     - `visitBaseUrl`
-    - `pageShouldContain`
     - `fillInForm`
-- API examples
-    - `request`
-    - `post`
 
 ### Features
 
@@ -37,8 +33,7 @@ The benefits of choosing this framework are also available on their site, just i
     - [x] `hardReset`: Resets the entire browser and its cache.
     - [x] `assertBaseUrl`: Asserts a traversed element module that represents the base URL. See [baseUrl.js](./cypress/fixtures/test-application/elements/baseUrl.js).
     - [x] Wiki documentation for `visitBaseUrl`, `assertBaseUrl` and `hardReset`
-- [ ] `pageShouldContain`: Parameterized command that takes `string`, `tag`, `attributes` when making an assertion against an element on the page.
-- [ ] `fillInForm`: Parameterized command that fills in form with `id`, `values`, `submit`. `submit` is a boolean that submits the form upon filling.
+- [x] `fillInForm`: Parameterized command that fills in form with `id`, `values`, `submit`. `submit` is a boolean that submits the form upon filling.
 
 ## Get started
 The tests are executed from the command line. Fire up terminal, and navigate to the project root.

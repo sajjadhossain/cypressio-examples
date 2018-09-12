@@ -4,6 +4,6 @@ before(() => {
 
 describe('fillOutForm()', () => {
   it('fills out form on homepage', () => {
-    cy.fillOutForm('form')
+    cy.fillOutForm()
   })
 })
